@@ -9,7 +9,7 @@
   <meta property="og:title" content="NTRO — National Trade Register Office Romania" />
   <meta property="og:description" content="Official public authority for trade register management in Romania. Company registration, amendments, certificates, insolvency and UBO declarations." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#071120" />
+  <meta name="theme-color" content="#000091" />
   <title>NTRO — National Trade Register Office | Romania</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,20 +59,21 @@
 ================================================ -->
 <div class="gov-banner" role="banner">
   <div class="container gov-banner__inner">
-    <div class="gov-banner__left">
-      <span class="gov-banner__badge">
-        <span class="gov-banner__badge-dot" aria-hidden="true"></span>
-        Official Government Website — Romania
-      </span>
+    <div class="gov-banner__identity">
+      <div class="tricolor" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <div class="gov-banner__name">Romania · Ministry of Justice</div>
+        <div class="gov-banner__sub">National Trade Register Office — NTRO / ONRC</div>
+      </div>
       <span class="gov-banner__sep" aria-hidden="true"></span>
-      <a href="#" class="gov-banner__link">Ministry of Justice</a>
       <a href="#" class="gov-banner__link">Accessibility</a>
       <a href="#" class="gov-banner__link">Site Map</a>
-      <a href="#" class="gov-banner__link">GDPR / Privacy</a>
+      <a href="#" class="gov-banner__link">GDPR</a>
+      <a href="#" class="gov-banner__link">Open Data</a>
     </div>
-    <div class="gov-banner__right" role="navigation" aria-label="Language">
-      <button class="lang-btn lang-btn--active" lang="en" aria-label="English — current language">EN</button>
-      <button class="lang-btn" lang="ro" aria-label="Switch to Romanian">RO</button>
+    <div class="gov-banner__right" role="navigation" aria-label="Language selection">
+      <a href="#" class="lang-btn lang-btn--active" lang="en" aria-label="English — current language">EN</a>
+      <a href="#" class="lang-btn" lang="ro" aria-label="Switch to Romanian">RO</a>
     </div>
   </div>
 </div>
@@ -272,13 +273,12 @@
 <!-- ================================================
      SECURITY NOTICE
 ================================================ -->
-<div class="notice-bar notice-bar--security" role="alert">
-  <svg width="17" height="17" aria-hidden="true"><use href="#i-shield"/></svg>
+<div class="notice-bar" role="alert">
+  <svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>
   <span>
     <strong>Official government domain.</strong>
-    This is an authentic NTRO service. Always verify the URL begins with
-    <strong>https://www.onrc.ro</strong> before entering credentials or making payments.
-    <a href="#">Learn more about phishing</a>.
+    Always verify the URL begins with <strong>https://www.onrc.ro</strong> before entering credentials or making payments. —
+    <a href="#">How to recognise official NTRO services</a>
   </span>
 </div>
 
@@ -292,15 +292,13 @@
     <!-- Left -->
     <div>
       <div class="hero__ministry">
-        <span class="hero__ministry-seal" aria-hidden="true">
-          <svg width="14" height="14"><use href="#i-bldg"/></svg>
-        </span>
-        Ministry of Justice · Romania
+        <span class="hero__ministry-dot" aria-hidden="true"></span>
+        Official register — under the Ministry of Justice of Romania
       </div>
 
       <h1 class="hero__title" id="hero-title">
         National Trade<br/>
-        <em>Register Office</em>
+        <span>Register Office</span>
       </h1>
 
       <p class="hero__subtitle">
@@ -371,11 +369,11 @@
 
     <!-- Right — portal cards -->
     <aside aria-label="Online platform access">
-      <div class="hero__portals">
-        <div class="hero__portals-header">
-          <span class="hero__portals-title">Online Platforms</span>
-          <span class="hero__portals-status">
-            <span style="width:6px;height:6px;border-radius:50%;background:#16a34a;display:inline-block"></span>
+      <div class="hero__panel">
+        <div class="hero__panel-header">
+          <span class="hero__panel-title">Online Platforms</span>
+          <span class="hero__panel-status">
+            <span class="status-dot" aria-hidden="true"></span>
             All systems operational
           </span>
         </div>
@@ -421,12 +419,12 @@
             <svg width="16" height="16" class="portal-item__arrow"><use href="#i-arrow"/></svg>
           </a>
         </nav>
-        <div class="hero__trust">
-          <div class="trust-item"><svg width="13" height="13"><use href="#i-check"/></svg>EU BRIS</div>
-          <div class="trust-item"><svg width="13" height="13"><use href="#i-check"/></svg>eIDAS</div>
-          <div class="trust-item"><svg width="13" height="13"><use href="#i-check"/></svg>ISO 27001</div>
-          <div class="trust-item"><svg width="13" height="13"><use href="#i-check"/></svg>GDPR</div>
-          <div class="trust-item"><svg width="13" height="13"><use href="#i-check"/></svg>NIS2</div>
+        <div class="hero__panel-footer">
+          <div class="trust-item"><svg width="12" height="12"><use href="#i-check"/></svg>EU BRIS</div>
+          <div class="trust-item"><svg width="12" height="12"><use href="#i-check"/></svg>eIDAS</div>
+          <div class="trust-item"><svg width="12" height="12"><use href="#i-check"/></svg>ISO 27001</div>
+          <div class="trust-item"><svg width="12" height="12"><use href="#i-check"/></svg>GDPR</div>
+          <div class="trust-item"><svg width="12" height="12"><use href="#i-check"/></svg>NIS2</div>
         </div>
       </div>
     </aside>
@@ -465,7 +463,7 @@
 <!-- ================================================
      CORE SERVICES
 ================================================ -->
-<section class="section section--border-top" id="services" aria-labelledby="services-title">
+<section class="section" id="services" aria-labelledby="services-title">
   <div class="container">
     <div class="section-head section-head--row">
       <div>
@@ -473,7 +471,7 @@
         <h2 class="section-title" id="services-title">Trade Register Operations</h2>
         <p class="section-subtitle">All registration, amendment, and information services managed by NTRO.</p>
       </div>
-      <a href="#" class="btn btn--ghost" style="border-color:var(--border);color:var(--slate-700);flex-shrink:0">
+      <a href="#" class="btn btn--ghost" style="flex-shrink:0">
         Full Service Index <svg width="14" height="14"><use href="#i-arrow"/></svg>
       </a>
     </div>
@@ -546,7 +544,7 @@
 <!-- ================================================
      PRELIMINARY OPERATIONS
 ================================================ -->
-<section class="section section--parchment section--border-top" id="prelim" aria-labelledby="prelim-title">
+<section class="section section--alt" id="prelim" aria-labelledby="prelim-title">
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Before You Apply</div>
@@ -585,14 +583,14 @@
 <!-- ================================================
      NEWS & ANNOUNCEMENTS
 ================================================ -->
-<section class="section section--border-top" id="news" aria-labelledby="news-title">
+<section class="section" id="news" aria-labelledby="news-title">
   <div class="container">
     <div class="section-head section-head--row">
       <div>
         <div class="eyebrow">Latest Updates</div>
         <h2 class="section-title" id="news-title">News &amp; Announcements</h2>
       </div>
-      <a href="#" class="btn btn--ghost" style="border-color:var(--border);color:var(--slate-700);flex-shrink:0">
+      <a href="#" class="btn btn--ghost" style="flex-shrink:0">
         All News <svg width="14" height="14"><use href="#i-arrow"/></svg>
       </a>
     </div>
@@ -671,7 +669,7 @@
 
         <!-- Announcements -->
         <aside aria-labelledby="ann-title">
-          <h3 id="ann-title" style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--slate-500);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem">
+          <h3 id="ann-title" style="font-size:.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--g425);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem">
             <svg width="14" height="14"><use href="#i-alert"/></svg>
             System &amp; Institutional Notices
           </h3>
@@ -719,7 +717,7 @@
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn--ghost btn--sm btn--block" style="margin-top:1rem;border-color:var(--border);color:var(--slate-600)">
+          <a href="#" class="btn btn--ghost btn--sm btn--block" style="margin-top:1rem">
             All Announcements
           </a>
         </aside>
@@ -761,14 +759,14 @@
 <!-- ================================================
      LEGISLATION
 ================================================ -->
-<section class="section section--parchment section--border-top" id="legislation" aria-labelledby="leg-title">
+<section class="section section--alt" id="legislation" aria-labelledby="leg-title">
   <div class="container">
     <div class="section-head section-head--row">
       <div>
         <div class="eyebrow">Legal Framework</div>
         <h2 class="section-title" id="leg-title">Key Legislation &amp; Regulations</h2>
       </div>
-      <a href="#" class="btn btn--ghost" style="border-color:var(--border);color:var(--slate-700);flex-shrink:0">
+      <a href="#" class="btn btn--ghost" style="flex-shrink:0">
         Full Legal Index <svg width="14" height="14"><use href="#i-arrow"/></svg>
       </a>
     </div>
@@ -804,25 +802,25 @@
 <!-- ================================================
      ABOUT + TRUST
 ================================================ -->
-<section class="section section--border-top" id="about" aria-labelledby="about-title">
+<section class="section" id="about" aria-labelledby="about-title">
   <div class="container about-grid">
 
     <div>
       <div class="eyebrow">About NTRO</div>
       <h2 class="section-title" id="about-title">Romania's Official Trade Register Authority</h2>
-      <p style="font-size:1rem;color:var(--slate-600);line-height:1.8;margin-bottom:1.25rem">
-        The <strong style="color:var(--slate-800)">National Trade Register Office (NTRO / ONRC)</strong> is a public institution
-        subordinated to the <strong style="color:var(--slate-800)">Ministry of Justice of Romania</strong>, responsible for
+      <p style="font-size:1rem;color:var(--g600);line-height:1.8;margin-bottom:1.25rem">
+        The <strong style="color:var(--g950)">National Trade Register Office (NTRO / ONRC)</strong> is a public institution
+        subordinated to the <strong style="color:var(--g950)">Ministry of Justice of Romania</strong>, responsible for
         administering the National Trade Register — the official legal record of all commercial
         professionals operating in Romania.
       </p>
-      <p style="font-size:.9375rem;color:var(--slate-500);line-height:1.8;margin-bottom:1.5rem">
+      <p style="font-size:.9375rem;color:var(--g600);line-height:1.8;margin-bottom:1.5rem">
         Established under Law 26/1990 and restructured through Government Decision 902/2012,
         NTRO operates through its central headquarters in Bucharest (Blvd. Unirii nr. 74,
-        Bl. J3b, Sector 3) and a network of <strong style="color:var(--slate-700)">42 territorial offices</strong> —
+        Bl. J3b, Sector 3) and a network of <strong style="color:var(--g950)">42 territorial offices</strong> —
         one in each county and one in Bucharest — all located adjacent to the competent Tribunal.
         Romania is fully integrated with the EU
-        <strong style="color:var(--slate-700)">Business Registers Interconnection System (BRIS)</strong>.
+        <strong style="color:var(--g950)">Business Registers Interconnection System (BRIS)</strong>.
       </p>
 
       <div class="about-features">
@@ -846,7 +844,7 @@
     </div>
 
     <div class="compliance-panel" aria-label="Compliance certifications">
-      <div class="compliance-panel__title">Compliance &amp; Certifications</div>
+      <div class="compliance-panel__head">Compliance &amp; Certifications</div>
       <div class="cert-row">
         <div class="cert-row__icon"><svg width="18" height="18"><use href="#i-shield"/></svg></div>
         <div><div class="cert-row__name">ISO / IEC 27001</div><div class="cert-row__desc">Information Security Management System</div></div>
@@ -872,8 +870,8 @@
         <div><div class="cert-row__name">BRIS / Directive (EU) 2017/1132</div><div class="cert-row__desc">Business Registers Interconnection System</div></div>
         <svg width="16" height="16" class="cert-row__check"><use href="#i-check"/></svg>
       </div>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgb(255 255 255/.07)">
-        <p style="font-size:.75rem;color:var(--slate-500);line-height:1.65">
+      <div class="cert-row" style="border-bottom:none;background:var(--g75)">
+        <p style="font-size:.75rem;color:var(--g600);line-height:1.65">
           NTRO is supervised by the Ministry of Justice and operates in compliance with all applicable EU and
           national legislation governing public registries, data protection, and electronic public services.
         </p>
@@ -886,37 +884,37 @@
 <!-- ================================================
      TERRITORIAL OFFICES
 ================================================ -->
-<section class="section section--navy" id="offices" aria-labelledby="offices-title">
+<section class="section section--alt" id="offices" aria-labelledby="offices-title">
   <div class="container">
     <div class="section-head section-head--row">
       <div>
-        <div class="eyebrow eyebrow--light">Network Coverage</div>
-        <h2 class="section-title section-title--light" id="offices-title">42 Offices Across Romania</h2>
-        <p class="section-subtitle section-subtitle--light">One office per county, adjacent to the local Tribunal. Open Mon–Fri, 08:30–16:30.</p>
+        <div class="eyebrow">Network Coverage</div>
+        <h2 class="section-title" id="offices-title">42 Offices Across Romania</h2>
+        <p class="section-subtitle">One office per county, adjacent to the local Tribunal. Open Mon–Fri, 08:30–16:30.</p>
       </div>
-      <a href="#" class="btn btn--outline-light" style="flex-shrink:0">
+      <a href="#" class="btn btn--secondary" style="flex-shrink:0">
         <svg width="14" height="14"><use href="#i-pin"/></svg>
         Find Your Office
       </a>
     </div>
 
     <div class="offices-grid">
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--hq"></span><span class="office-card__name">Bucharest — Headquarters</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Cluj-Napoca</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Timișoara</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Iași</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Brașov</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Constanța</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Craiova</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Ploiești</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Galați</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Oradea</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Sibiu</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Bacău</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Târgu Mureș</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Arad</span></a>
-      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online"></span><span class="office-card__name">Pitești</span></a>
-      <a href="#" class="office-card" style="justify-content:center;font-size:.75rem;color:var(--slate-500)">+ 27 more offices →</a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--hq" aria-hidden="true"></span><span class="office-card__name">Bucharest — Headquarters</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Cluj-Napoca</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Timișoara</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Iași</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Brașov</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Constanța</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Craiova</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Ploiești</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Galați</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Oradea</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Sibiu</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Bacău</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Târgu Mureș</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Arad</span></a>
+      <a href="#" class="office-card"><span class="office-card__dot office-card__dot--online" aria-hidden="true"></span><span class="office-card__name">Pitești</span></a>
+      <a href="#" class="office-card" style="justify-content:center;font-size:.75rem;color:var(--g600)">+ 27 more offices →</a>
     </div>
 
     <div class="contact-strip" style="margin-top:2rem">
@@ -972,11 +970,11 @@
         </p>
       </div>
       <div class="cta-band__actions">
-        <a href="#" class="btn btn--gold btn--xl">
+        <a href="#" class="btn btn--white btn--xl">
           <svg width="18" height="18"><use href="#i-file"/></svg>
           Register Online
         </a>
-        <a href="#" class="btn btn--outline-light btn--xl">
+        <a href="#" class="btn btn--white-outline btn--xl">
           <svg width="18" height="18"><use href="#i-help"/></svg>
           Get Assistance
         </a>
@@ -994,7 +992,7 @@
 
       <div>
         <div class="footer__brand-logo">
-          <div class="footer__brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.75"><use href="#i-shield"/></svg></div>
+          <div class="footer__brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75"><use href="#i-shield"/></svg></div>
           <div><div class="footer__brand-acronym">NTRO · ONRC</div><div class="footer__brand-sub">National Trade Register Office · Romania</div></div>
         </div>
         <p class="footer__brand-desc">
@@ -1011,7 +1009,7 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
           <a href="#" class="footer__social-link" aria-label="YouTube">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#071120" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="var(--g75)" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
           </a>
         </div>
       </div>
@@ -1090,7 +1088,7 @@
     We use cookies to enhance your experience and measure site usage. See our <a href="#">Cookie Policy</a> and <a href="#">Privacy Policy</a>.
   </p>
   <div class="cookie-banner__actions">
-    <button class="btn btn--ghost btn--sm" id="cookieDecline" style="color:var(--slate-400);border-color:rgb(255 255 255/.15)">Decline</button>
+    <button class="btn btn--ghost btn--sm" id="cookieDecline">Decline</button>
     <button class="btn btn--primary btn--sm" id="cookieAccept">Accept</button>
   </div>
 </div>
