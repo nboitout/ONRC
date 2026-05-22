@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Registrul Comerțului — Modernised badge logo
-  Inspired by the original ONRC emblem; anchor with volute scrolls.
-  ViewBox 280×280 · all shapes crisp fills · colour #C41829
+  Registrul Comerțului — modernised SVG badge
+  Faithful structure: two scroll hooks · wide T-bar · shaft
+  upward triangles · П-crown · circular text · bottom smile arc
+  ViewBox 280×280 · single colour #C41829
 -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 280 280" width="280" height="280"
@@ -12,35 +13,19 @@
 
   <defs>
     <!--
-      Top-half arc, clockwise L→R through the top (sweep-flag=1, small-arc=0).
-      Radius 121 → baseline at r=121; ascenders reach r≈133 (inside outer ring r=136).
-      Path starts at 9-o'clock (19,140) and ends at 3-o'clock (261,140).
+      Top-half arc: clockwise from 9-o'clock (19,140) → 3-o'clock (261,140)
+      via 12-o'clock. Baseline at r=121; glyphs ~12 px tall → tops at r≈133,
+      inside outer ring at r=136.
     -->
     <path id="textArc" d="M 19,140 A 121,121 0 0 1 261,140"/>
   </defs>
 
-  <!-- ══════════════════════════════════════════════════ -->
-  <!--  BADGE RINGS                                       -->
-  <!-- ══════════════════════════════════════════════════ -->
-
-  <!-- White disc -->
+  <!-- ════════════════════════════════ RINGS ══════ -->
   <circle cx="140" cy="140" r="139" fill="white"/>
-
-  <!-- Outer ring (heavy) -->
   <circle cx="140" cy="140" r="136" fill="none" stroke="#C41829" stroke-width="3"/>
-
-  <!-- Inner separator ring (light) — sits just below text baseline -->
   <circle cx="140" cy="140" r="119" fill="none" stroke="#C41829" stroke-width="0.9"/>
 
-  <!-- ══════════════════════════════════════════════════ -->
-  <!--  CIRCULAR TEXT                                     -->
-  <!-- ══════════════════════════════════════════════════ -->
-
-  <!--
-    Font: Georgia (serif, elegant, widely available).
-    Baseline at r=121; 12 px tall → tops at r≈133, comfortably inside outer ring.
-    letter-spacing tuned so text spans ~70 % of the half-arc (centred at 12-o'clock).
-  -->
+  <!-- ══════════════════════════ CIRCULAR TEXT ═══ -->
   <text font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif"
         font-size="12" font-weight="bold" fill="#C41829" letter-spacing="5.2">
     <textPath href="#textArc" startOffset="50%" text-anchor="middle">
@@ -48,73 +33,88 @@
     </textPath>
   </text>
 
-  <!-- ══════════════════════════════════════════════════ -->
-  <!--  CENTRAL EMBLEM  — modernised anchor               -->
-  <!--                                                    -->
-  <!--  Composition (top→bottom):                        -->
-  <!--    • Two filled volute scrolls (rings of the anchor) -->
-  <!--    • Vertical shaft                                 -->
-  <!--    • Capped horizontal crossbar (stock)            -->
-  <!--    • Widened base bridge                           -->
-  <!--    • Two triangular flukes                         -->
-  <!-- ══════════════════════════════════════════════════ -->
+  <!-- ══════════════════ BOTTOM SMILE + DOTS ═════
+       Thin arc on the inner ring at the bottom, flanked by two dots.
+       Dots at ~210° and ~330° from top (clock: 7-o'clock / 5-o'clock).
+  -->
+  <!-- Arc from left dot to right dot through bottom of circle, sweep=0 (CCW) -->
+  <path d="M 80.5,243 A 119,119 0 0 0 199.5,243"
+        fill="none" stroke="#C41829" stroke-width="1.2"/>
+  <!-- Left dot -->
+  <circle cx="80.5" cy="243" r="3" fill="#C41829"/>
+  <!-- Right dot -->
+  <circle cx="199.5" cy="243" r="3" fill="#C41829"/>
 
-  <!--
-    LEFT VOLUTE
-    A closed bezier that emerges from the shaft's upper-left,
-    sweeps outward-left-upward, curls back at the apex, and
-    returns to close on the shaft — creating a classic scroll shape.
-    The shaft rect below will visually merge at the connection.
+  <!-- ════════════════════ CENTRAL EMBLEM ════════
+
+    Vertical centre line: x=140
+    Emblem spans y=72 (top of scrolls) → y=220 (bottom of П-crown)
+
+    ┌─────────────────────────────────────────────┐
+    │  LEFT SCROLL     RIGHT SCROLL               │
+    │   ╭───╮              ╭───╮                  │
+    │   │   ╰──────────────╯   │                  │
+    │ ══════════════════════════════ (T-bar)       │
+    │         │shaft│                             │
+    │   △               △  (triangles)            │
+    │         │shaft│                             │
+    │    ┌────┘     └────┐  (П-crown)             │
+    │    │               │                        │
+    │    └───────────────┘                        │
+    └─────────────────────────────────────────────┘
+  -->
+
+  <!-- ── LEFT SCROLL
+       A filled bezier shape: starts at T-bar level, sweeps left-up,
+       hooks back right at apex (like a reversed J), returns to start.
   -->
   <path d="
-    M 133,117
-    C 114,112  102,96  108,80
-    C 114,64   131,66  135,79
-    C 138,89   134,110 133,117
+    M 131,118
+    C 112,114  100,97   108,79
+    C 116,61   131,63   130,78
+    C 129,90   130,108  131,118
     Z"
     fill="#C41829"/>
 
-  <!--
-    RIGHT VOLUTE  (mirror of left about x=140)
-    Mirror formula: x′ = 280 − x
-  -->
+  <!-- ── RIGHT SCROLL  (mirror about x=140: x′ = 280-x) -->
   <path d="
-    M 147,117
-    C 166,112  178,96  172,80
-    C 166,64   149,66  145,79
-    C 142,89   146,110 147,117
+    M 149,118
+    C 168,114  180,97   172,79
+    C 164,61   149,63   150,78
+    C 151,90   150,108  149,118
     Z"
     fill="#C41829"/>
 
-  <!-- VERTICAL SHAFT — connects scrolls to crossbar to base -->
-  <rect x="133" y="108" width="14" height="83" rx="2" fill="#C41829"/>
+  <!-- ── T-BAR  (wide horizontal crossbar / stock) -->
+  <rect x="82" y="118" width="116" height="13" rx="2" fill="#C41829"/>
 
-  <!--
-    HORIZONTAL CROSSBAR (stock)
-    Centre rect + two hemispherical caps = clean capped-rod motif.
-  -->
-  <rect x="110" y="127" width="60" height="13" rx="2" fill="#C41829"/>
-  <!-- Left cap  -->
-  <circle cx="110" cy="133" r="7" fill="#C41829"/>
-  <!-- Right cap -->
-  <circle cx="170" cy="133" r="7" fill="#C41829"/>
+  <!-- ── SHAFT  (narrow column, T-bar → П-crown) -->
+  <rect x="132" y="131" width="16" height="38" rx="0" fill="#C41829"/>
 
-  <!--
-    BASE BRIDGE — a wider bar at the shaft bottom,
-    visually connects shaft to the two flukes.
+  <!-- ── LEFT TRIANGLE  (upward-pointing, flanks shaft on the left)
+       Centred midway between shaft left (132) and T-bar left (82): x=107.
+       Apex touches T-bar bottom (y=131); base at y=163.
   -->
-  <rect x="118" y="185" width="44" height="7" rx="2" fill="#C41829"/>
+  <polygon points="107,131  89,163  125,163" fill="#C41829"/>
 
-  <!--
-    LEFT FLUKE
-    Downward-pointing triangle hanging from the base-left.
-    Apex at (112, 214), base at (133–133, 191) shared with shaft/bridge.
-  -->
-  <polygon points="133,191  104,214  128,214" fill="#C41829"/>
+  <!-- ── RIGHT TRIANGLE  (mirror: shaft right=148, T-bar right=198 → centre=173) -->
+  <polygon points="173,131  155,163  191,163" fill="#C41829"/>
 
-  <!--
-    RIGHT FLUKE  (mirror)
+  <!-- ── П-CROWN (lower anchor crown)
+       A filled rectangle with a rectangular notch at the top centre
+       matching the shaft width (16 px), forming an open П.
+       Arms: x=108-132 and x=148-172 ; base connects at bottom y=220.
   -->
-  <polygon points="147,191  152,214  176,214" fill="#C41829"/>
+  <path d="
+    M 108,220
+    L 108,169
+    L 132,169
+    L 132,198
+    L 148,198
+    L 148,169
+    L 172,169
+    L 172,220
+    Z"
+    fill="#C41829"/>
 
 </svg>
