@@ -996,6 +996,10 @@ img { display: block; max-width: 100%; }
   .gov-banner { display: none; }
   .header__nav { display: none; }
   .header__mobile-toggle { display: flex; }
+  /* Hide fixed demo badge — orange notice bar at top already covers it */
+  .demo-badge { display: none; }
+  /* Hide "Register a Company" CTA — accessible via mobile menu */
+  .header__actions .btn--primary { display: none; }
   .services-grid { grid-template-columns: 1fr; }
   .svc-card { border-right: none; }
   .svc-card:nth-last-child(n) { border-bottom: var(--border); }
@@ -1018,6 +1022,8 @@ img { display: block; max-width: 100%; }
 }
 @media (max-width: 480px) {
   .container { padding-inline: var(--sp5); }
+  /* Collapse header height — hide the long subtitle so logo mark + acronym fit one line */
+  .logo__name { display: none; }
   .hero__quick { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr; }
   .stats-bar__grid { grid-template-columns: 1fr 1fr; }
