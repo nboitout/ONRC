@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Registrul Comerțului — Modernised badge logo
+  Inspired by the original ONRC emblem; anchor with volute scrolls.
+  ViewBox 280×280 · all shapes crisp fills · colour #C41829
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 280 280" width="280" height="280"
+     role="img"
+     aria-label="Registrul Comerțului — National Trade Register Office Romania">
+  <title>Registrul Comerțului — Romania</title>
+
+  <defs>
+    <!--
+      Top-half arc, clockwise L→R through the top (sweep-flag=1, small-arc=0).
+      Radius 121 → baseline at r=121; ascenders reach r≈133 (inside outer ring r=136).
+      Path starts at 9-o'clock (19,140) and ends at 3-o'clock (261,140).
+    -->
+    <path id="textArc" d="M 19,140 A 121,121 0 0 1 261,140"/>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  BADGE RINGS                                       -->
+  <!-- ══════════════════════════════════════════════════ -->
+
+  <!-- White disc -->
+  <circle cx="140" cy="140" r="139" fill="white"/>
+
+  <!-- Outer ring (heavy) -->
+  <circle cx="140" cy="140" r="136" fill="none" stroke="#C41829" stroke-width="3"/>
+
+  <!-- Inner separator ring (light) — sits just below text baseline -->
+  <circle cx="140" cy="140" r="119" fill="none" stroke="#C41829" stroke-width="0.9"/>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  CIRCULAR TEXT                                     -->
+  <!-- ══════════════════════════════════════════════════ -->
+
+  <!--
+    Font: Georgia (serif, elegant, widely available).
+    Baseline at r=121; 12 px tall → tops at r≈133, comfortably inside outer ring.
+    letter-spacing tuned so text spans ~70 % of the half-arc (centred at 12-o'clock).
+  -->
+  <text font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif"
+        font-size="12" font-weight="bold" fill="#C41829" letter-spacing="5.2">
+    <textPath href="#textArc" startOffset="50%" text-anchor="middle">
+      REGISTRUL COMERȚULUI
+    </textPath>
+  </text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  CENTRAL EMBLEM  — modernised anchor               -->
+  <!--                                                    -->
+  <!--  Composition (top→bottom):                        -->
+  <!--    • Two filled volute scrolls (rings of the anchor) -->
+  <!--    • Vertical shaft                                 -->
+  <!--    • Capped horizontal crossbar (stock)            -->
+  <!--    • Widened base bridge                           -->
+  <!--    • Two triangular flukes                         -->
+  <!-- ══════════════════════════════════════════════════ -->
+
+  <!--
+    LEFT VOLUTE
+    A closed bezier that emerges from the shaft's upper-left,
+    sweeps outward-left-upward, curls back at the apex, and
+    returns to close on the shaft — creating a classic scroll shape.
+    The shaft rect below will visually merge at the connection.
+  -->
+  <path d="
+    M 133,117
+    C 114,112  102,96  108,80
+    C 114,64   131,66  135,79
+    C 138,89   134,110 133,117
+    Z"
+    fill="#C41829"/>
+
+  <!--
+    RIGHT VOLUTE  (mirror of left about x=140)
+    Mirror formula: x′ = 280 − x
+  -->
+  <path d="
+    M 147,117
+    C 166,112  178,96  172,80
+    C 166,64   149,66  145,79
+    C 142,89   146,110 147,117
+    Z"
+    fill="#C41829"/>
+
+  <!-- VERTICAL SHAFT — connects scrolls to crossbar to base -->
+  <rect x="133" y="108" width="14" height="83" rx="2" fill="#C41829"/>
+
+  <!--
+    HORIZONTAL CROSSBAR (stock)
+    Centre rect + two hemispherical caps = clean capped-rod motif.
+  -->
+  <rect x="110" y="127" width="60" height="13" rx="2" fill="#C41829"/>
+  <!-- Left cap  -->
+  <circle cx="110" cy="133" r="7" fill="#C41829"/>
+  <!-- Right cap -->
+  <circle cx="170" cy="133" r="7" fill="#C41829"/>
+
+  <!--
+    BASE BRIDGE — a wider bar at the shaft bottom,
+    visually connects shaft to the two flukes.
+  -->
+  <rect x="118" y="185" width="44" height="7" rx="2" fill="#C41829"/>
+
+  <!--
+    LEFT FLUKE
+    Downward-pointing triangle hanging from the base-left.
+    Apex at (112, 214), base at (133–133, 191) shared with shaft/bridge.
+  -->
+  <polygon points="133,191  104,214  128,214" fill="#C41829"/>
+
+  <!--
+    RIGHT FLUKE  (mirror)
+  -->
+  <polygon points="147,191  152,214  176,214" fill="#C41829"/>
+
+</svg>
