@@ -923,6 +923,21 @@ img { display: block; max-width: 100%; }
 .cookie-banner__actions { display: flex; gap: var(--sp3); flex-shrink: 0; }
 #cookieBanner.hidden { display: none; }
 
+/* Demo badge — fixed, always visible */
+.demo-badge {
+  position: fixed; bottom: var(--sp5); left: var(--sp5); z-index: 9998;
+  display: flex; align-items: center; gap: var(--sp2);
+  background: var(--white);
+  border: 1px solid var(--orange);
+  border-left: 3px solid var(--orange);
+  padding: .375rem .75rem;
+  font-size: .6875rem; font-weight: 600; color: var(--orange);
+  box-shadow: var(--shadow-sm);
+  max-width: 260px;
+  line-height: 1.4;
+}
+.demo-badge svg { flex-shrink: 0; }
+
 /* Scroll to top */
 .scroll-top {
   position: fixed; bottom: var(--sp10); right: var(--sp6); z-index: 999;
